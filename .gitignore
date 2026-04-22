@@ -125,7 +125,6 @@ cython_debug/
 
 # IDEs
 .idea/
-.vscode/
 
 # Draw.io schemas
 *.drawio
