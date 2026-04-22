@@ -20,8 +20,8 @@ class Instruction:
         self.operand = operand
 
     def __str__(self) -> str:
-        return f"{(str(self.address) + ":"):<6} {self.opcode.name:<6} " + (
-            f"{"'" + self.operand + "'" if isinstance(self.operand, str) else self.operand}"
+        return f"{(str(self.address) + ':'):<6} {self.opcode.name:<6} " + (
+            f"{repr(self.operand)}"
             if self.operand is not None
             else ""
         )

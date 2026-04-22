@@ -1,0 +1,57 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Translator: HELP",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/translator/main.py",
+            "args": ["--help"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Translator: translate hello_world.asm",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/translator/main.py",
+            "args": ["./examples/hello_world.asm", "./dbg/i.txt", "./dbg/d.txt"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Machine: HELP",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/machine/main.py",
+            "args": ["--help"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Machine: debug hello_world.asm",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/machine/main.py",
+            "args": ["./dbg/i.txt", "./dbg/d.txt", "./dbg/input.txt"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+    ]
+}

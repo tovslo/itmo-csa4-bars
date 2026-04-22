@@ -17,7 +17,7 @@ class Data:
         self.value = value
 
     def __str__(self) -> str:
-        return f"{(str(self.address) + ":"):<6} {self.value}"
+        return f"{(str(self.address) + ':'):<6} {self.value}"
 
     def to_json(self) -> str:
         return json.dumps(self, default=vars, sort_keys=True)
